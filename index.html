@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo"><img src="imagenes estandar/logo.png" alt="logo" width="140" height="auto"></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="/imagenes estandar/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="imagenes estandar/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen </th>
+                                        <th>Nombre </th>
+                                        <th>Precio </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="imagenes prendas de lana/IMG_6307.jpg" alt="" width="540" height="720" style="border-radius: 30px;">
+            </div>
+            <div class="header-txt">
+                <h1>Ofertas Especiales</h1>
+                <p>Estrena las mejores prendas</p>
+                <a href="#" class="btn-1">informacion</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imagenes prendas de lana/IMG_6462.jpg" alt="" width="auto" height="auto">
+            </div>
+            <div class="ofert-txt">
+                <h3>Guantes de Lana Rojos</h3>
+                <a href="#" class="btn-2">informacion</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imagenes prendas de lana/IMG_6458.jpg" alt="" width="auto" height="auto">
+            </div>
+            <div class="ofert-txt">
+                <h3>Guantes de Lana Anaranjado</h3>
+                <a href="#" class="btn-2">informacion</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imagenes prendas de lana/IMG_6454.jpg" alt="" width="auto" height="auto">
+            </div>
+            <div class="ofert-txt">
+                <h3>Guantes de Lana Blancos</h3>
+                <a href="#" class="btn-2">informacion</a>
+            </div>
+        </div>
+
+    </section>
+
+    <main class="products container" id="lista-1">
+
+        <h2>Productos</h2>
+        <div class="product-content">
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6191.jpg" alt="" width="320" height="455">
+                <img src="imagenes prendas de lana/IMG_6197.jpg" alt="" width="320" height="455">
+                <img src="imagenes prendas de lana/IMG_6416.jpg" alt="" width="320" height="455">
+                <img src="imagenes prendas de lana/IMG_6184.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Guantes de Lana Rosa</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$69.900</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al Carrito</a>
+                </div>
+                <button class="arrow left">&lt;</button>
+                <button class="arrow right">&gt;</button>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6278.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Cuello y Gorro de lana Rojo</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6221.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6292.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Full accesorios</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6341.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6374.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6416.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$69.900</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6434.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Guantes de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$7000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6438.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6442.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6448.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Guantes de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6454.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Guantes de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6458.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6241.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6184.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/IMG_6374.jpg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/guantes blancos 1.jpeg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/blanco 3.jpeg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="imagenes prendas de lana/morado1.jpeg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/rosa 2.jpeg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imagenes prendas de lana/rosa 3.jpeg" alt="" width="320" height="455">
+                <div class="product-txt">
+                    <h3>Chaleco de Lana</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <section class="icons container">
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="imagenes estandar/i1.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="imagenes estandar/i2.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="imagenes estandar/i3.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog container">
+        <div class="blog-1">
+            <img src="imagenes estandar/b1.jpg" alt="">
+            <h3>Blog 1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="blog-1">
+            <img src="imagenes estandar/b2.jpg" alt="">
+            <h3>Blog 2</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="blog-1">
+            <img src="imagenes estandar/b3.jpg" alt="">
+            <h3>Blog 3</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
